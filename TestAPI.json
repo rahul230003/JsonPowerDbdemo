@@ -1,0 +1,174 @@
+{
+  "version": 6,
+  "entities": [
+    {
+      "entity": {
+        "type": "Project",
+        "id": "9888877e-3441-4292-804d-1a09cf0c39ea",
+        "name": "CRUD"
+      },
+      "children": [
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n    \"token\": \"90937737|-31949295357534878|90942083\",\n    \"cmd\": \"GET\",\n    \"dbName\": \"StudentDetails\",\n    \"rel\": \"Student-Rel\",\n    \"jsonStr\":{\n        \"name\": \"Rahul\"\n    }\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "api.login2explore.com:5577",
+              "path": "/api/irl"
+            },
+            "id": "f2cde245-fa69-496c-9fb8-a20f10b030c3",
+            "name": "GetCRUD",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n    \"token\": \"90937737|-31949295357534878|90942083\",\n    \"cmd\": \"PUT\",\n    \"dbName\": \"StudentDetails\",\n    \"rel\": \"Student-Rel\",\n    \"jsonStr\": {\n        \"id\": \"1\",\n        \"name\": \"Rahul\",\n        \"email\": \"Rahul@gmail.com\",\n        \"mobileno\": \"9876543210\"\n    }\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "api.login2explore.com:5577",
+              "path": "/api/iml"
+            },
+            "id": "5f37a2b4-ec22-409d-92fe-24954ac5354a",
+            "name": "PutCRUD",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n    \"token\": \"90937737|-31949295357534878|90942083\",\n    \"cmd\": \"REMOVE\",\n    \"dbName\": \"StudentDetails\",\n    \"rel\": \"Student-Rel\",\n    \"record\": 1\n}\n"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "api.login2explore.com:5577",
+              "path": "/api/iml"
+            },
+            "id": "3bf45cc6-577b-45af-814d-01e110e4306f",
+            "name": "Removecrud",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n    \"token\": \"90937737|-31949295357534878|90942083\",\n    \"cmd\": \"UPDATE\",\n    \"dbName\": \"StudentDetails\",\n    \"rel\": \"Student-Rel\",\n     \"jsonStr\": {\n       \"1\":{\n        \"name\": \"Rahul Jain\",\n        \"email\":\"gargee@gmail.com\",\n        \"mobileno\": 7098162348\n\n      }\n}\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "api.login2explore.com:5577",
+              "path": "/api/iml"
+            },
+            "id": "dda1bcf1-6e2c-468e-b2ec-10a83734c7c5",
+            "name": "updatecrud",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
